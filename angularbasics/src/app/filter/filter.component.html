@@ -1,0 +1,18 @@
+<!-- using setBackground -> our custom directive from CustomDirective folder below mentioned div  -->
+<div >
+    <div class="filter-container" setBackground>
+        <span>Filter:</span>
+
+        <input type="radio" name="filter" value="All" [(ngModel)]="selectedRadioButton"
+            (change)="onRadioButtonSelectionChanged()" />
+        <span>{{'All Courses('+all+')'}}</span>
+
+        <input type="radio" name="filter" value="Free" [(ngModel)]="selectedRadioButton"
+            (change)="onRadioButtonSelectionChanged()" />
+        <span>{{'Free Courses('+free+')'}}</span>
+
+        <input type="radio" name="filter" value="Premium" [(ngModel)]="selectedRadioButton"
+            (change)="onRadioButtonSelectionChanged()" />
+        <span>{{'Premium Courses('+premium+')'}}</span>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+<div>
+    <app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
+    <app-filter [allcourses]="getAllCourses()" [free]="getFreeCourses()" [premium]="getPremiumCourses()"
+        (filterRadioButtonSelectionChanged)="onFilterRadioButtonChange($event)"></app-filter>
+</div>
+<div>
+    <app-coursedetailmodal></app-coursedetailmodal>
+</div>
+<ng-container *ngFor="let course of courses">
+    <div class="course-container">
+        <div class="course-card">
+            <div class="course-image">
+                <img [src]="course.image" appHover style="width: 290px; height: 160px;">
+            </div>
+            <div class="course-name">{{course.name}}</div>
+            <div class="course-description">
+                <p>{{course.description.slice(0, 91)}}...</p>
+            </div>
+            <div class="details">
+                <div class="course-type" [ngStyle]="{color: course.type ==='Free'? 'Green':'Red'}">{{course.type}}
+                </div>
+                <div class="course-price"><b>Price:&nbsp;</b>${{course.price}}</div>
+            </div>
+            <div class="course-buttons">
+                <button class="btn btn-buy" routerLink="/Courses/Buycourse/{{course.id}}">Buy Now</button>
+                <button class="btn btn-show" (click)="ShowDetails(course)">Show
+                    <!-- (click)="OnClickShowDetails(course.name,course.price, course.description, course.author, course.duration)"  -->
+
+                    Details</button>
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+<div>
+    <app-newcourses></app-newcourses>
+</div>
+<div>
+    <app-feedbacks></app-feedbacks>
+</div>
+<div>
+    <app-addcourse></app-addcourse>
+</div>

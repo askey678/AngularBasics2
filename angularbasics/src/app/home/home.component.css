@@ -1,0 +1,167 @@
+
+/* Styles for container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 20px 20px;
+    margin-left: 50px;
+    background-color: #747070;
+    margin-bottom: 50px;
+}
+
+/* Styles for course cards */
+.course-container {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #EAEAEA;
+    /* border-radius: 5px; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #253130;
+    border-radius: 5px;
+}
+
+.course-card {
+    width: 300px;
+    margin: 40px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+.course-image {
+    margin: 15px 10px;
+    margin-bottom: 0%;
+}
+
+.course-name {
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+.course-description {
+    padding: 5px 10px;
+    font-size: 14px;
+    height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.course-type {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.course-price {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.course-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Styles for hero section */
+.hero-section {
+    background-image: url('./homefeaturebg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 50px 0;
+    border-radius: 20px;
+}
+
+/* Styles for hero content */
+.hero-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Styles for key features */
+.key-features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.feature {
+    text-align: center;
+    flex: 1;
+    padding: 3px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    margin: 0 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+    padding: 3px 3px;
+    max-width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+/* Additional styles for popular courses (if needed) */
+/* ... (as provided before) ... */
+.header{
+    margin-top: 10px;
+}
+.content{
+    color: #000;
+}
+.btn-buy{
+    background-color: rgba(216, 124, 124, 0.596);
+    border-radius: 3px;
+}
+.btn-show{
+    background-color: rgba(129, 219, 158, 0.651);
+    border-radius: 3px;
+
+}
+
+.explore-card {
+    width: 300px;
+    margin: 50px;
+    background-color: #253130;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-top: 7px;
+    padding-bottom: 14px;
+}
+.btn-explore{
+background-color: #253130;
+color: white;
+font-weight: bolder;
+width: 300px;
+height: 40px;
+font-size: large;
+
+    
+}

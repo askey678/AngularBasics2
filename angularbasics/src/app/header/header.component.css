@@ -1,0 +1,14 @@
+.header{
+    padding-top: 20px;
+    color:rgb(245, 160, 81);
+    display: flex;
+    align-items: first baseline;
+}
+.masterheader{
+    display: flex;
+    background-color: rgba(20, 41, 68, 0.993);
+}
+.logoimage{
+    display: flex;
+    align-items: flex-end;
+}

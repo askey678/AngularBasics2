@@ -1,0 +1,57 @@
+.container{
+    display: flex;
+    background-color: #7da6bd;
+    padding: 20px 20px;
+    align-items: center;
+    justify-content: center;
+}
+.sub-container{
+    padding: 20px 20px;
+    display: flex-column;
+    background-color: #39464e;
+    align-items: center;
+}
+.form{
+    padding: 35px 35px;
+    margin: 40px;
+    margin-bottom: 50px;
+    background-color: #5a6e7a;
+    justify-content: space-around;
+    width: 500px;
+    align-items: center;
+   
+}
+#coursename{
+    width: 220px;
+}
+
+.labels {
+    /* display: block; */
+    font-weight: bold;
+    margin: 10px 10px;
+    width: 100px;
+    display: flex;
+    margin-left: 100px;
+}
+
+/* Styling for the addcourse class */
+.addcourse {
+    display:flex;
+    margin-bottom: 15px;
+    align-items: center;
+    text-align: center;
+    /* justify-content; */
+}
+
+.btn-add{
+    font-weight: bold;
+    margin: 20px 10px;
+    margin-top: 40px;
+    display: flex;
+    margin-left: 190px;
+}
+.btn-addbutton{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(204, 145, 34);
+}

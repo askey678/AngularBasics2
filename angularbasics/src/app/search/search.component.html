@@ -1,0 +1,6 @@
+<!-- setting properties of below mentioned div from the customDirective highlight.directive.ts file from the CustomDirective folder with use of Renderer2 class -->
+<div appHighlight>
+    <br>
+    <span>Search</span>
+    <input type="text" [(ngModel)]="enteredSearchValue" (input)="onSearchTextChanged()">
+</div>

@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="sub-container">
+        <h2>Add Course</h2>
+        <div class="form">
+            <div class="addcourse">
+                <div class="labels">
+                    <label>Title</label>
+                </div>
+                <div>
+                    <input type="text" placeholder="CourseName" id="username" [(ngModel)]="name">
+                </div>
+            </div>
+            <div class="addcourse">
+                <div class="labels">
+                    <label>Type</label>
+                </div>
+                <div>
+                    <select name="type" id="type" [(ngModel)]="type">
+                        <option value="free">Free</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </div>
+            </div>
+            <div class="addcourse">
+                <div class="labels">
+                    <label>Image</label>
+                </div>
+                <div>
+                    <input type="text" placeholder="CourseImage" id="image" [(ngModel)]="image">
+                </div>
+            </div>
+            <div class="addcourse">
+                <div class="labels">
+                    <label>Price</label>
+                </div>
+                <div>
+                    <input type="text" placeholder="Price" id="price" [(ngModel)]="price">
+                </div>
+            </div>
+            <div class="addcourse">
+                <div class="labels">
+                    <label>Description</label>
+                </div>
+                <div>
+                    <input type="text" placeholder="Description" id="description" [(ngModel)]="description">
+                </div>
+            </div>
+            <div class="addcourse btn-add">
+                <button class="btn-addbutton" (click)="AddCourse()">Add Course</button>
+            </div>
+        </div>
+    </div>
+</div>

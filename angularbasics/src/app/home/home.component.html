@@ -1,0 +1,68 @@
+
+<div class="container">
+    <div class="hero-section">
+        <div class="hero-content">
+            <h2>Coding Central</h2>
+            <br>
+            <h4>Your Path to Coding Excellence</h4>
+            <p>Unlock your potential with our comprehensive coding courses, designed to empower you with the latest
+                technologies and skills.</p>
+            <div class="key-features">
+                <div class="feature">
+                    <img src="../../assets/handsonlearning.jpg" alt="Feature 1">
+                    <h4 class="content">Hands-On Learning</h4>
+                    <p class="content">Learn by doing with practical coding exercises and projects.</p>
+                </div>
+                <div class="feature">
+                    <img src="../../assets/expertinstruction.jpg" alt="Feature 2">
+                    <h4 class="content">Expert Instructors</h4>
+                    <p class="content">Our experienced instructors guide you through every step of your learning
+                        journey.</p>
+                </div>
+                <div class="feature">
+                    <img src="../../assets/flexiblelearning.jpg" alt="Feature 3">
+                    <h4 class="content">Flexible Learning</h4>
+                    <p class="content">Study at your own pace with our flexible online courses.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <br>
+        <br>
+        <h2>Popular Courses</h2>
+        <!-- Your existing code for popular courses -->
+        <!-- <hr style="border: #caaa8b 5px solid; margin: 5px 0px"> -->
+        <ng-container *ngFor="let course of courses">
+            <div class="course-container" *ngIf="course.ratings >= 4.5">
+                <div class="course-card">
+                    <div>
+                        <img [src]="course.image" appHover style="width: 290px; height: 160px;">
+                    </div>
+                    <div class="course-name">
+                        <h4>{{ course.name}}</h4>
+                    </div>
+                    <div class="course-description">
+                        <p>{{course.description.slice(0, 80)}}...</p>
+                    </div>
+                    <!-- <div class="details">
+                        <div class="course-type" [ngStyle]="{color: course.type === 'Free' ? 'Green' : 'Red'}">
+                            {{course.type}}</div>
+                        <div class="course-price"><b>Price:</b> ${{course.price}}</div>
+                    </div> -->
+                    <div class="course-buttons">
+                        <button class="btn btn-buy" routerLink="/Courses/Buycourse/{{course.id}}">Buy Now</button>
+                        <button class="btn btn-show" (click)="onShowDetailsClick(course)">Show Deatils</button>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+    <div class="explore-card">
+        <div class="course-buttons">
+            <button class="btn-explore" routerLink="/Courses/">Explore more</button>  </div>
+    </div>
+</div>
+<div class="footer">
+    <p>&copy; 2023 CodeCentral. All rights reserved.</p>
+</div>

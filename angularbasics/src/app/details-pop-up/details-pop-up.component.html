@@ -1,0 +1,25 @@
+<div class="mastercontainer">
+<h1 mat-dialog-title>
+    <h4 style="padding-left: 16px; font-weight: bold;">{{ data.name }}</h4>
+  </h1>
+  <mat-dialog-content>
+    <div class="container">
+      <div class="details-header">
+        <img src="{{ data.image }}" style="width: 200px; height: 200px;" />
+      </div>
+      <div class="details-body">
+        <p><strong>Trainer:</strong> {{ data.author }}</p>
+        <p><strong>Duration:</strong> {{ data.duration }}</p>
+        <p><strong>Type:</strong> {{ data.type }}</p>
+        <p><strong>Price:</strong> {{ data.price }}</p>
+        <p><strong>Ratings:</strong> {{ data.ratings }}</p>
+        <p><strong>Description:</strong> {{ data.description }}</p>
+      </div>
+    </div>
+  </mat-dialog-content>
+  <mat-dialog-actions class="dialog-actions">
+    <button mat-icon-button (click)="closeMe()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-dialog-actions>
+</div>

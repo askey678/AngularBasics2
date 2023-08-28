@@ -1,0 +1,22 @@
+<div class="container">
+    <h2>Trending Courses</h2>
+    <div class="feedback-container">
+        <div *ngFor="let video of videos" [appVideohighlight]="video.likes === mostLikedVideo.likes">
+            <div class="feedback-image">
+                <img [src]="video.thumbnail" appHover style="width: 290px; height: 160px;">
+            </div>
+            <div class="feedback-name">{{video.title}}</div>
+            <div class="details">
+                <div class="video-data">
+                    <i class="material-icons">thumb_up</i>{{video.likes}}
+                </div>
+                <div class="video-data">
+                    <i class="material-icons">thumb_down</i> {{video.dislikes}}
+                </div>
+                <div class="video-data">
+                    <i class="material-icons">reply_all</i>{{video.share}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
